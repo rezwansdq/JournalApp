@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SelfTrack</h1>
+
+        <!-- Date picker -->
+        <div class="section">
+            <label for="date">Select Date:</label>
+            <input type="date" id="journalDate">
+        </div>
+
+        <!-- Journal entry text area -->
+        <div class="section">
+            <label for="entry">Today's Journal Entry:</label>
+            <textarea id="journalEntry" placeholder="Write your journal entry here..."></textarea>
+        </div>
+
+        <!-- Checklist section -->
+        <div class="section">
+            <h3>Checklist</h3>
+            <!-- Checklist form -->
+            <ul id="checklist"></ul> <!-- List to hold checklist items -->
+            <input type="text" id="newItemInput" placeholder="Add a new item">
+            <button id="addItemButton">Add Item</button>
+        </div>
+
+
+        <!-- Rating section -->
+        <div class="section">
+            <h3>Rate Your Day</h3>
+            <ul id="ratingList"></ul> <!-- List to hold rating categories -->
+            <input type="text" id="newRatingCategory" placeholder="Add a new rating category">
+            <button id="addRatingCategoryButton">Add Rating Category</button>
+        </div>
+
+
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
